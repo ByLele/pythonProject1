@@ -1,7 +1,7 @@
 import os
 import codecs7z
 import time
-
+import py7zr
 from os import walk
 
 
@@ -36,6 +36,8 @@ for i in ignore_path_files:
 
 
 def file_list(srcpath):
+    # for x in os.listdir(srcpath):
+    #     print(x)
     arr = [os.path.join(srcpath,x) for x in os.listdir(srcpath)]
     return arr
 
@@ -60,12 +62,27 @@ def compression(savedir,source_dir):
     time.sleep(3)
     print(source_dir, '=====>', target)
 
+def com2():
+    import py7zr
+    i = 143
+    for item in file_arr:
 
+        filename = f"D:/gez/EDC-{i}.7z"
+        with py7zr.SevenZipFile(filename, 'w',password="LIFE") as archive:
+            print(item)
+            archive.write(item)
+
+        print("is over")
+        i = i+1
+srcpath = "D:/Download/迅雷下载/推特大神EDC/v/"
+
+import py7zr
 if __name__ == "__main__":
-    filelist = file_list(srcpathdudu)
-    for x in filelist:
-
-        compression(srcpath,x)
-
-
+    # filelist = file_list(srcpathdudu)
+    # for x in filelist:
+    #
+    #     compression(srcpath,x)
+    #com2()
+    file_arr=file_list(srcpath)
+    com2()
     pass
