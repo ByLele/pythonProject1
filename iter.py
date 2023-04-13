@@ -16,6 +16,13 @@ class Node:
         self.next = None
     def __iter__(self):
         return NodeIter(self)
+#TODO:生成器写法
+
+    def __iter__(self):
+        node = self
+        while node is not None:
+            yield node
+            node = node.next
 
 node1 = Node("node1")
 node2 = Node("node2")
