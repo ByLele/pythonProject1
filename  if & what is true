@@ -1,0 +1,15 @@
+#python中什么会当真
+
+a = False
+
+if a is True:
+    print("True")
+
+if a == True:  #TODO: custom object == True
+    print("True")
+
+if a:#slot_nb_bool   # None False 空 list  
+    print("True")#PyObject_IsTrue map sequence num bool customObject (__len__,__bool__)
+
+if bool(a):
+    print("True")

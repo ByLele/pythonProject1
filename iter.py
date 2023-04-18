@@ -32,3 +32,7 @@ node1.next = node2
 node2.next = node3
 for i in node1:
     print(i.name)
+
+
+#iterable. __iter__
+#iterator  __next__
