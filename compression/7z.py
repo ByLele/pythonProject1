@@ -1,10 +1,10 @@
 import os
-import codecs7z
+# import codecs7z
 import time
 import py7zr
 from os import walk
 
-
+import py7zr
 srcpath = "D:\\Download\\迅雷下载\\7z"
 srcpathdudu = "D:\\Download\\迅雷下载\\嘻哈范大神DuDu收官之战\\"
 
@@ -63,7 +63,6 @@ def compression(savedir,source_dir):
     print(source_dir, '=====>', target)
 
 def com2():
-    import py7zr
     i = 143
     for item in file_arr:
 
@@ -76,13 +75,14 @@ def com2():
         i = i+1
 srcpath = "D:/Download/迅雷下载/推特大神EDC/v/"
 
-import py7zr
+
 if __name__ == "__main__":
     # filelist = file_list(srcpathdudu)
     # for x in filelist:
     #
     #     compression(srcpath,x)
     #com2()
-    file_arr=file_list(srcpath)
-    com2()
-    pass
+    #file_arr=file_list(srcpath)
+    # com2()
+    # pass
+    dir(py7zr)
