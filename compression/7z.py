@@ -6,7 +6,7 @@ from os import walk
 
 import py7zr
 srcpath = "D:\\Download\\迅雷下载\\7z"
-srcpathdudu = "D:\\Download\\迅雷下载\\嘻哈范大神DuDu收官之战\\"
+srcpathdudu = "D:\\Download\\迅雷下载\\"
 
 
 
@@ -73,7 +73,7 @@ def com2():
 
         print("is over")
         i = i+1
-srcpath = "D:/Download/迅雷下载/推特大神EDC/v/"
+srcpath = "D:/Download/迅雷下载"
 
 
 if __name__ == "__main__":
